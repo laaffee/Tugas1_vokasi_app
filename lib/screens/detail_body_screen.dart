@@ -8,7 +8,7 @@ class DetailBodyScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: Container(
+        body: SingleChildScrollView(child: Container(
           margin: EdgeInsets.all(15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,6 +22,7 @@ class DetailBodyScreen extends StatelessWidget {
               _inputField(context),
             ],
           ),
+        ),
         ),
       ),
     );
@@ -39,7 +40,7 @@ class DetailBodyScreen extends StatelessWidget {
                   color: const Color(0xff484848),
             ),
           ),
-          const SizedBox(height: 30,),
+          const SizedBox(height: 15,),
       ],
     );
   }
