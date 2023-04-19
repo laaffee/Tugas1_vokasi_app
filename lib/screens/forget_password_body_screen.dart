@@ -61,7 +61,7 @@ class ForgetPasswordBodyScreen extends StatelessWidget {
               enabledBorder: OutlineInputBorder(
                  borderRadius: BorderRadius.all(
                     Radius.circular(50),),
-                    borderSide: BorderSide(color: Color(0xffEE8301), width: 2)
+                    borderSide: BorderSide(color: Color(0xffEE8301),),
                     ),
               fillColor: Colors.white,
               ),
