@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vokasi_app/screens/forget_password_screen.dart';
 import 'package:vokasi_app/screens/profile_screen.dart';
 
 class LoginBodyScreen extends StatelessWidget {
@@ -64,7 +65,7 @@ class LoginBodyScreen extends StatelessWidget {
               enabledBorder: OutlineInputBorder(
                  borderRadius: BorderRadius.all(
                     Radius.circular(50),),
-                    borderSide: BorderSide(color: Color(0xffEE8301), width: 2)
+                    borderSide: BorderSide(color: Color(0xffEE8301))
                     ),
               fillColor: Colors.white,
               ),
@@ -85,7 +86,7 @@ class LoginBodyScreen extends StatelessWidget {
               enabledBorder: OutlineInputBorder(
                  borderRadius: BorderRadius.all(
                     Radius.circular(50),),
-                    borderSide: BorderSide(color: Color(0xffEE8301), width: 2)
+                    borderSide: BorderSide(color: Color(0xffEE8301))
                     ),
             fillColor: Colors.white,
           ),
@@ -121,8 +122,15 @@ class LoginBodyScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context, 
-                  MaterialPageRoute(builder: (context) => ProfileScreen(),));
+                  MaterialPageRoute(builder: (context) => ForgetPasswordScreen(),
+                  ),
+                  );
               },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.transparent,
+                    foregroundColor: Colors.black, 
+                    elevation: 0,
+                  ),
             child: Text('Lupa kata sandi?', textAlign: TextAlign.center,  style: GoogleFonts.poppins(
             fontSize: 15.0,
             color: const Color(0xffEE8301),
