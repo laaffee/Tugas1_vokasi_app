@@ -177,7 +177,7 @@ class DetailBodyScreen extends StatelessWidget {
                 fontSize: 15, color: Color(0xff919191),),
               enabledBorder: OutlineInputBorder(
                  borderRadius: BorderRadius.all(
-                    Radius.circular(50),),
+                    Radius.circular(25),),
                     borderSide: BorderSide(color: Color(0xffEE8301),),
                     ),
             fillColor: Colors.white,
